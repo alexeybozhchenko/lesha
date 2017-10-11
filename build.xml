@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="usermanagement" default="test">
+<project name="JavaLW1" default="test">
     <property name="main-java-dir" value="${basedir}/src/main/java"/>
     <property name="test-java-dir" value="${basedir}/src/test/java"/>
     <property name="build-dir" value="${basedir}/bin"/>
