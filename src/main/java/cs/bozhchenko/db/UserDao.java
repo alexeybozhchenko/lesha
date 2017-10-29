@@ -5,7 +5,7 @@ import cs5.bozhchenko.User;
 import java.util.Collection;
 
 /**
- * Created by motorcrue on 29.10.2017.
+ * Created by motorcruon 29.10.2017.
  */
 public interface UserDao {
     User create(User user) throws DatabaseException;
@@ -14,3 +14,4 @@ public interface UserDao {
     User find(Long id) throws DatabaseException;
     Collection findAll() throws DatabaseException;
 }
+//ghgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
