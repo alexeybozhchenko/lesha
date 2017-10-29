@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="false" />
     </content>
+    <content url="jar://$MODULE_DIR$/lib/dbunit-2.1.jar!/" />
+    <content url="jar://$MODULE_DIR$/lib/hsqldb-1.8.0.1.jar!/" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Arquillian JUnit:Release" level="project" />
