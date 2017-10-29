@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dea1af4-4ba3-4882-84d7-0b749f9951c1" name="Default" comment="initial commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaLW1.iml" afterPath="$PROJECT_DIR$/JavaLW1.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/HsqldbUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/HsqldbUserDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="52">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,8 +57,20 @@
       <file leaf-file-name="HsqldbUserDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/HsqldbUserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="50" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="14" selection-end-column="50" />
+            <state relative-caret-position="234">
+              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HsqldbUserDaoTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/HsqldbUserDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,9 +110,9 @@
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit5 Test Class" />
-        <option value="JUnit3 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -125,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/DatabaseException.java" />
         <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/HsqldbUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/HsqldbUserDaoTest.java" />
       </list>
     </option>
   </component>
@@ -335,7 +346,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/cs5/bozhchenko" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="SearchEverywhereHistoryKey" value="ant&#9;ACTION&#9;ActivateAntBuildToolWindow" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/hsqldb-1.8.0.1.jar!/" />
@@ -344,6 +355,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="cs5.bozhchenko.cs.bozhchenko.db" />
       <recent name="cs5.bozhchenko" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -892,7 +904,7 @@
       <workItem from="1508802272039" duration="4385000" />
       <workItem from="1508837641522" duration="1271000" />
       <workItem from="1508847481351" duration="857000" />
-      <workItem from="1509237313681" duration="4249000" />
+      <workItem from="1509237313681" duration="7091000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1507703858782</created>
@@ -937,7 +949,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30817000" />
+    <option name="totallyTimeSpent" value="33659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1405,8 +1417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/HsqldbUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="50" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="234">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1415,8 +1427,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="52">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/cs/bozhchenko/db/HsqldbUserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
