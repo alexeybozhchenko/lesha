@@ -6,8 +6,8 @@ import org.dbunit.database.DatabaseConnection;
 import org.dbunit.database.IDatabaseConnection;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.XmlDataSet;
-import org.hsqldb.lib.Collection;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -17,16 +17,7 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
     private HsqldbUserDao dao;
     private ConnectionFactory connectionFactory;
 
-    public void testFindAll(){
-        try {
-            java.util.Collection collection =  dao.findAll();
-            assertNotNull("Collection is null",collection);
-            assertEquals("Collection size.",2,collection.size());
-        } catch (DatabaseException e) {
-            e.printStackTrace();
-            fail(e.toString());
-        }
-    }
+
 
     @Override
     protected IDatabaseConnection getConnection() throws Exception {
@@ -66,4 +57,58 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
 
     }
 
+    public void testUpdate() throws Exception {
+        try {
+            User temporaryUser = dao.find(1000L);
+            assertNotNull(temporaryUser);
+            temporaryUser.setFirstName("John");
+            dao.update(temporaryUser);
+            User updatedUser = dao.find(1000L);
+            assertEquals(temporaryUser.getFirstName(), updatedUser.getFirstName());
+        } catch (DatabaseException e) {
+            e.printStackTrace();
+            fail(e.toString());
+        }
+    }
+
+    public void testFind() throws Exception {
+        User bush = new User();
+        bush.setId(1001L);
+        bush.setFirstName("George");
+        bush.setLastName("Bush");
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(1949, Calendar.AUGUST, 17, 0, 0, 0);
+        calendar.set(Calendar.MILLISECOND, 0);
+        bush.setDateOfBirth(calendar.getTime());
+
+        User result = dao.find(1001L);
+
+        assertEquals("Wrong first name",bush.getFirstName(),result.getFirstName());
+        assertEquals("Wrong last name",bush.getLastName(),result.getLastName());
+        assertEquals("Wrong id",bush.getId(),result.getId());
+        assertEquals("Wrong date of birth",bush.getDateOfBirth(),result.getDateOfBirth());
+    }
+
+    public void testFindAll(){
+        try {
+            java.util.Collection collection =  dao.findAll();
+            assertNotNull("Collection is null",collection);
+            assertEquals("Collection size.",2,collection.size());
+        } catch (DatabaseException e) {
+            e.printStackTrace();
+            fail(e.toString());
+        }
+    }
+
+    public void testDelete() throws Exception {
+        try {
+
+            User userToCheck = dao.find(1001L);
+            assertNotNull(userToCheck);
+            dao.delete(userToCheck);
+            assertEquals(1, dao.findAll().size());
+        } catch (DatabaseException e) {
+            fail(e.getMessage());
+        }
+    }
 }

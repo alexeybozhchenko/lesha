@@ -14,8 +14,12 @@ class HsqldbUserDao implements UserDao{
     private static final String INSERT_QUERY = "INSERT INTO USERS (firstname, lastname, dateofbirth) VALUES (?, ?, ?)";
     private static final String SELECT_ALL_QUERY = "SELECT id, firstname, lastname, dateofbirth FROM users";
     private ConnectionFactory connectionFactory;
+    private static final String FIND_QUERY = "SELECT id, firstname, lastname, dateofbirth FROM users WHERE id=?";
+    private static final String UPDATE_QUERY = "UPDATE users SET firstname=?, lastname=?, dateofbirth=? WHERE id=?";
+    private static final String DELETE_QUERY = "DELETE FROM users WHERE id=?";
 
     public HsqldbUserDao(){
+        super();
     }
 
     public HsqldbUserDao(ConnectionFactory connectionFactory){
@@ -63,17 +67,68 @@ class HsqldbUserDao implements UserDao{
 
     @Override
     public User update(User user) throws DatabaseException {
-        return null;
+        try {
+            Connection connection = connectionFactory.createConnection();
+            PreparedStatement statement = connection
+                    .prepareStatement(UPDATE_QUERY);
+            statement.setString(1, user.getFirstName());
+            statement.setString(2, user.getLastName());
+            statement.setDate(3, new Date(user.getDateOfBirth().getTime()));
+            statement.setLong(4, user.getId());
+            int n = statement.executeUpdate();
+            if (n != 1) {
+                throw new DatabaseException("Number of the updated rows: " + n);
+            }
+            statement.close();
+            connection.close();
+            return user;
+        } catch (DatabaseException e) {
+            throw e;
+        } catch (SQLException e) {
+            throw new DatabaseException(e);
+        }
     }
 
     @Override
     public void delete(User user) throws DatabaseException {
-
+        Connection connection=connectionFactory.createConnection();
+        try {
+            PreparedStatement statement= connection.prepareStatement(DELETE_QUERY);
+            statement.setLong(1, user.getId());
+            statement.executeUpdate();
+            statement.close();
+            connection.close();
+        }catch(SQLException e){
+            throw new DatabaseException(e);
+        }
     }
 
     @Override
     public User find(Long id) throws DatabaseException {
-        return null;
+        User result = null;
+        try {
+            Connection connection = connectionFactory.createConnection();
+            PreparedStatement statement = connection.prepareStatement(FIND_QUERY);
+            statement.setLong(1, id);
+            ResultSet resultSet = statement.executeQuery();
+            if (!resultSet.next()) {
+                throw new DatabaseException("Could not find the user with id="
+                        + id);
+            }
+            result = new User();
+            result.setId(resultSet.getLong(1));
+            result.setFirstName(resultSet.getString(2));
+            result.setLastName(resultSet.getString(3));
+            result.setDateOfBirth(resultSet.getDate(4));
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (DatabaseException e) {
+            throw e;
+        } catch (SQLException e) {
+            throw new DatabaseException(e);
+        }
+        return result;
     }
 
     @Override
