@@ -1,4 +1,4 @@
-package cs5.bozhchenko.cs.bozhchenko.db;
+package cs.bozhchenko.db;
 
 import cs5.bozhchenko.User;
 
