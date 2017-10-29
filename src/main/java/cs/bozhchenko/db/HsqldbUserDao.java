@@ -8,6 +8,13 @@ import java.util.Collection;
  * Created by motorcrue on 29.10.2017.
  */
 public class HsqldbUserDao implements UserDao{
+
+    private ConnectionFactory connectionFactory;
+
+    public HsqldbUserDao(ConnectionFactory connectionFactory){
+        this.connectionFactory = connectionFactory;
+    }
+
     @Override
     public User create(User user) throws DatabaseException {
         return null;
