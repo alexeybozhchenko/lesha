@@ -2,24 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dea1af4-4ba3-4882-84d7-0b749f9951c1" name="Default" comment="initial commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactory.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaLW1/cs5/bozhchenko/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaLW1/cs5/bozhchenko/UserTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cs/bozhchenko/db/DaoFactory.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cs/bozhchenko/db/ConnectionFactory.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/ConnectionFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cs/bozhchenko/db/ConnectionFactoryImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/ConnectionFactoryImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cs/bozhchenko/db/DatabaseException.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DatabaseException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cs/bozhchenko/db/HsqldbUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/HsqldbUserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cs/bozhchenko/db/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/cs/bozhchenko/db/DaoFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/DaoFactoryTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/cs/bozhchenko/db/HsqldbUserDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/HsqldbUserDaoTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/UserTest.java" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaLW1/messages.properties.properties" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/AddPanel.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/AddPanel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/BrowsePanel.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/BrowsePanel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/DeletePanel.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/DeletePanel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/DetailsPanel.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/DetailsPanel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/EditPanel.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/EditPanel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/MainFrame.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/MainFrame.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/UserTableModel.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/UserTableModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/messages.properties.properties" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JavaLW1.iml" afterPath="$PROJECT_DIR$/JavaLW1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaLW1/settings.properties" afterPath="$PROJECT_DIR$/out/production/JavaLW1/settings.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/User.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/settings.properties" afterPath="$PROJECT_DIR$/src/main/resources/settings.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactoryImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactoryImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MainFrameTest.java" afterPath="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MainFrameTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,22 +40,12 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="DaoFactoryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/DaoFactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/MainFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+            <state relative-caret-position="1000">
+              <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,13 +56,13 @@
       <file leaf-file-name="MainFrameTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MainFrameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-257">
-              <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+            <state relative-caret-position="452">
+              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#setUp#0;class#MainFrameTest#0" expanded="false" />
                 <element signature="method#tearDown#0;class#MainFrameTest#0" expanded="false" />
                 <element signature="method#find#0;class#MainFrameTest#0" expanded="false" />
-                <element signature="method#testBrowseControls#0;class#MainFrameTest#0" expanded="false" />
                 <element signature="method#testAddUser#0;class#MainFrameTest#0" expanded="false" />
                 <element signature="method#testDeleteUser#0;class#MainFrameTest#0" expanded="false" />
                 <element signature="method#testDetailsUser#0;class#MainFrameTest#0" expanded="false" />
@@ -87,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MockDaoFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/MockDaoFactory.java">
+      <file leaf-file-name="BrowsePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/BrowsePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="450">
+              <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,28 +84,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MockUserDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/MockUserDao.java">
+      <file leaf-file-name="DaoFactoryImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="450">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DaoFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetailsPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/DetailsPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/EditPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTableModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/UserTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/User.java">
+      <file leaf-file-name="messages.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#User#3;class#User#0" expanded="false" />
-                <element signature="method#getAge#0;class#User#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,7 +202,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/util/Messages.java" />
         <option value="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/AddPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/Messages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/BrowsePanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/UserTableModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/EditPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/DeletePanel.java" />
@@ -193,12 +214,17 @@
         <option value="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MockDaoFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MockUserDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/HsqldbUserDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/settings.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/messages.properties.properties" />
         <option value="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/MockUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/settings.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/BrowsePanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/DetailsPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/EditPanel.java" />
         <option value="$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MainFrameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactoryImpl.java" />
       </list>
     </option>
   </component>
@@ -230,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,10 +282,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaLW1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaLW1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaLW1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bozhchenko" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaLW1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bozhchenko" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="lesha">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src/test/java">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="cs5/bozhchenko/gui">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,7 +425,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="SearchEverywhereHistoryKey" value="MainFrame&#9;PSI&#9;JAVA://com.sun.webkit.WebPage#getMainFrame&#10;Database Manager&#9;PSI&#9;JAVA://org.hsqldb.util.DatabaseManagerSwing&#10;Database M&#9;PSI&#9;JAVA://org.hsqldb.DatabaseManager&#10;ant&#9;ACTION&#9;ActivateAntBuildToolWindow" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mockobjects-core-0.09.jar!/" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -316,41 +467,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DaoFactoryTest">
-    <configuration default="false" name="All in JavaLW1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JavaLW1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="HsqldbUserDaoTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MainFrameTest.testBrowseControls">
+    <configuration default="false" name="MainFrameTest.testAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="cs.bozhchenko.db.*" />
+          <option name="PATTERN" value="cs5.bozhchenko.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="JavaLW1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cs.bozhchenko.db" />
-      <option name="MAIN_CLASS_NAME" value="cs.bozhchenko.db.HsqldbUserDaoTest" />
-      <option name="METHOD_NAME" value="testCreate" />
+      <option name="PACKAGE_NAME" value="cs5.bozhchenko.gui" />
+      <option name="MAIN_CLASS_NAME" value="cs5.bozhchenko.gui.MainFrameTest" />
+      <option name="METHOD_NAME" value="testAddUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -364,20 +494,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="HsqldbUserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MainFrameTest.testBrowseControls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="cs.bozhchenko.db.*" />
+          <option name="PATTERN" value="cs5.bozhchenko.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="JavaLW1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cs.bozhchenko.db" />
-      <option name="MAIN_CLASS_NAME" value="cs.bozhchenko.db.HsqldbUserDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="cs5.bozhchenko.gui" />
+      <option name="MAIN_CLASS_NAME" value="cs5.bozhchenko.gui.MainFrameTest" />
+      <option name="METHOD_NAME" value="testBrowseControls" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -390,20 +520,72 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="DaoFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MainFrameTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="cs.bozhchenko.db.*" />
+          <option name="PATTERN" value="cs5.bozhchenko.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="JavaLW1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cs.bozhchenko.db" />
-      <option name="MAIN_CLASS_NAME" value="cs.bozhchenko.db.DaoFactoryTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="cs5.bozhchenko.gui" />
+      <option name="MAIN_CLASS_NAME" value="cs5.bozhchenko.gui.MainFrameTest" />
+      <option name="METHOD_NAME" value="testDeleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainFrameTest.testDetailsUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cs5.bozhchenko.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="JavaLW1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cs5.bozhchenko.gui" />
+      <option name="MAIN_CLASS_NAME" value="cs5.bozhchenko.gui.MainFrameTest" />
+      <option name="METHOD_NAME" value="testDetailsUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainFrameTest.testEditUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cs5.bozhchenko.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="JavaLW1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cs5.bozhchenko.gui" />
+      <option name="MAIN_CLASS_NAME" value="cs5.bozhchenko.gui.MainFrameTest" />
+      <option name="METHOD_NAME" value="testEditUser" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -803,19 +985,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.All in JavaLW1" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HsqldbUserDaoTest.testCreate" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HsqldbUserDaoTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DaoFactoryTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testAddUser" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testBrowseControls" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testDeleteUser" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testDetailsUser" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testEditUser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DaoFactoryTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.HsqldbUserDaoTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HsqldbUserDaoTest.testCreate" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HsqldbUserDaoTest.testCreate" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.All in JavaLW1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testBrowseControls" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testEditUser" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testDetailsUser" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testDeleteUser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MainFrameTest.testAddUser" />
       </list>
     </recent_temporary>
   </component>
@@ -849,6 +1032,7 @@
       <workItem from="1509308691674" duration="370000" />
       <workItem from="1509309341150" duration="4714000" />
       <workItem from="1510359656863" duration="12471000" />
+      <workItem from="1510399872086" duration="5588000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1507703858782</created>
@@ -861,39 +1045,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 21h 01m 41s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testAddUser - 2017.11.11 at 14h 11m 51s.xml">
+      <configuration name="MainFrameTest.testAddUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 21h 10m 17s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testBrowseControls - 2017.11.11 at 14h 24m 21s.xml">
+      <configuration name="MainFrameTest.testBrowseControls" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 21h 12m 35s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testBrowseControls - 2017.11.11 at 14h 25m 36s.xml">
+      <configuration name="MainFrameTest.testBrowseControls" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 21h 15m 07s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testBrowseControls - 2017.11.11 at 14h 34m 21s.xml">
+      <configuration name="MainFrameTest.testBrowseControls" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 21h 16m 15s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testBrowseControls - 2017.11.11 at 14h 35m 38s.xml">
+      <configuration name="MainFrameTest.testBrowseControls" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 21h 20m 07s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testBrowseControls - 2017.11.11 at 14h 51m 22s.xml">
+      <configuration name="MainFrameTest.testBrowseControls" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 21h 20m 59s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testBrowseControls - 2017.11.11 at 14h 58m 34s.xml">
+      <configuration name="MainFrameTest.testBrowseControls" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 22h 25m 37s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testDeleteUser - 2017.11.11 at 14h 31m 38s.xml">
+      <configuration name="MainFrameTest.testDeleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.10.29 at 22h 36m 33s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testDetailsUser - 2017.11.11 at 14h 36m 27s.xml">
+      <configuration name="MainFrameTest.testDetailsUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoFactoryTest - 2017.11.11 at 03h 42m 01s.xml">
-      <configuration name="DaoFactoryTest" configurationId="JUnit" />
+    <history-entry file="MainFrameTest_testEditUser - 2017.11.11 at 14h 37m 23s.xml">
+      <configuration name="MainFrameTest.testEditUser" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78473000" />
+    <option name="totallyTimeSpent" value="84061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -910,33 +1094,33 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16125761" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16125761" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3306288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3306288" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1625" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="5.2083336E-4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.123958334" sideWeight="0.4939577" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39756593" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.123958334" sideWeight="0.5060423" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -983,7 +1167,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1001,150 +1185,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/ConnectionFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/com/sun/webkit/WebPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30471">
-          <caret line="1532" column="38" lean-forward="false" selection-start-line="1532" selection-start-column="38" selection-end-line="1532" selection-end-column="39" />
-          <caret line="1535" column="38" lean-forward="false" selection-start-line="1535" selection-start-column="38" selection-end-line="1535" selection-end-column="39" />
-          <caret line="1537" column="38" lean-forward="false" selection-start-line="1537" selection-start-column="38" selection-end-line="1537" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="20" column="42" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="e#1326#1327#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/Messages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/AddPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/DeletePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/EditPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2583">
-          <caret line="123" column="17" lean-forward="true" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/DetailsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/UserTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/BrowsePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2016">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/HsqldbUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1510368214311" expanded="true" signature="300:369" ph="INSERT INTO USERS... " />
-            <marker date="1510368214311" expanded="true" signature="424:478" ph="SELECT id, f... users" />
-            <marker date="1510368214311" expanded="true" signature="594:659" ph="SELECT id, f... users" />
-            <marker date="1510368214311" expanded="true" signature="710:776" ph="UPDATE users... " />
-            <marker date="1510368214311" expanded="true" signature="827:855" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DatabaseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/DaoFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -1153,74 +1193,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MainFrameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="250" column="1" lean-forward="false" selection-start-line="250" selection-start-column="1" selection-end-line="250" selection-end-column="1" />
-          <folding>
-            <element signature="method#setUp#0;class#MainFrameTest#0" expanded="false" />
-            <element signature="method#tearDown#0;class#MainFrameTest#0" expanded="false" />
-            <element signature="method#find#0;class#MainFrameTest#0" expanded="false" />
-            <element signature="method#testBrowseControls#0;class#MainFrameTest#0" expanded="false" />
-            <element signature="method#testAddUser#0;class#MainFrameTest#0" expanded="false" />
-            <element signature="method#testDeleteUser#0;class#MainFrameTest#0" expanded="false" />
-            <element signature="method#testDetailsUser#0;class#MainFrameTest#0" expanded="false" />
-            <element signature="method#testEditUser#0;class#MainFrameTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/settings.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/HsqldbUserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/c5/bozhchenko/gui/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
+        <state relative-caret-position="882">
           <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="67" lean-forward="true" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1234,37 +1213,321 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/MockUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;class#User#0" expanded="false" />
+            <element signature="method#User#0;class#User#0" expanded="false" />
             <element signature="method#User#3;class#User#0" expanded="false" />
             <element signature="method#getAge#0;class#User#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/MockUserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MainFrameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="273">
+          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#find#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#testAddUser#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#testDeleteUser#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#testDetailsUser#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#testEditUser#0;class#MainFrameTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/com/sun/webkit/WebPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30471">
+          <caret line="1532" column="38" lean-forward="false" selection-start-line="1532" selection-start-column="38" selection-end-line="1532" selection-end-column="39" />
+          <caret line="1535" column="38" lean-forward="false" selection-start-line="1535" selection-start-column="38" selection-end-line="1535" selection-end-column="39" />
+          <caret line="1537" column="38" lean-forward="false" selection-start-line="1537" selection-start-column="38" selection-end-line="1537" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/DeletePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DatabaseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MainFrameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="250" column="1" lean-forward="false" selection-start-line="250" selection-start-column="1" selection-end-line="250" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#tearDown#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#find#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#testAddUser#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#testDeleteUser#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#testDetailsUser#0;class#MainFrameTest#0" expanded="false" />
+            <element signature="method#testEditUser#0;class#MainFrameTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/usersDataSet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/AddPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jfcunit-2.08.jar!/junit/extensions/jfcunit/JFCTestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4810">
+          <caret line="340" column="5" lean-forward="true" selection-start-line="340" selection-start-column="5" selection-end-line="340" selection-end-column="5" />
+          <folding>
+            <element signature="method#createNoExitSecurityManager#0;class#JFCTestCase#0" expanded="false" />
+            <element signature="method#runCode#0;class#JFCTestCase#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/settings.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#User#0" expanded="false" />
+            <element signature="method#User#0;class#User#0" expanded="false" />
+            <element signature="method#User#3;class#User#0" expanded="false" />
+            <element signature="method#getAge#0;class#User#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/HsqldbUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2050">
+          <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1510368214311" expanded="true" signature="300:369" ph="INSERT INTO USERS... " />
+            <marker date="1510368214311" expanded="true" signature="424:478" ph="SELECT id, f... users" />
+            <marker date="1510368214311" expanded="true" signature="594:659" ph="SELECT id, f... users" />
+            <marker date="1510368214311" expanded="true" signature="710:776" ph="UPDATE users... " />
+            <marker date="1510368214311" expanded="true" signature="827:855" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/MockDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/HsqldbUserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="62" column="49" lean-forward="false" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/DaoFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/db/MockUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/DetailsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/EditPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/UserTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/ConnectionFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="28" column="62" lean-forward="false" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/gui/BrowsePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cs5/bozhchenko/db/DaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cs5/bozhchenko/gui/MainFrameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        <state relative-caret-position="452">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#setUp#0;class#MainFrameTest#0" expanded="false" />
             <element signature="method#tearDown#0;class#MainFrameTest#0" expanded="false" />
             <element signature="method#find#0;class#MainFrameTest#0" expanded="false" />
-            <element signature="method#testBrowseControls#0;class#MainFrameTest#0" expanded="false" />
             <element signature="method#testAddUser#0;class#MainFrameTest#0" expanded="false" />
             <element signature="method#testDeleteUser#0;class#MainFrameTest#0" expanded="false" />
             <element signature="method#testDetailsUser#0;class#MainFrameTest#0" expanded="false" />

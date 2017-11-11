@@ -1,4 +1,4 @@
-package c5.bozhchenko.gui;
+package cs5.bozhchenko.gui;
 
 import cs5.bozhchenko.db.DaoFactory;
 import cs5.bozhchenko.db.UserDao;

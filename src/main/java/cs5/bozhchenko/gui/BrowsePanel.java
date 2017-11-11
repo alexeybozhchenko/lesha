@@ -1,4 +1,4 @@
-package c5.bozhchenko.gui;
+package cs5.bozhchenko.gui;
 
 import cs5.bozhchenko.User;
 import cs5.bozhchenko.db.DatabaseException;
@@ -28,7 +28,7 @@ public class BrowsePanel extends JPanel implements ActionListener {
     }
 
     private void initialize() {
-        this.setName("browsePanel"); //$NON-NLS-1$
+        this.setName("browsePanel");
         this.setLayout(new BorderLayout());
         this.add(getTablePanel(), BorderLayout.CENTER);
         this.add(getButtonsPanel(), BorderLayout.SOUTH);

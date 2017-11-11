@@ -1,10 +1,9 @@
 package cs5.bozhchenko.gui;
 
-import c5.bozhchenko.gui.MainFrame;
 import com.mockobjects.dynamic.Mock;
 import cs5.bozhchenko.User;
 import cs5.bozhchenko.db.DaoFactory;
-
+import java.util.Date;
 import cs5.bozhchenko.Messages;
 import cs5.bozhchenko.db.MockDaoFactory;
 import junit.extensions.jfcunit.JFCTestCase;
@@ -21,18 +20,19 @@ import java.awt.*;
 import java.text.DateFormat;
 import java.util.*;
 
-import static java.util.Calendar.NOVEMBER;
-
-
 public class MainFrameTest extends JFCTestCase {
+
 
     private MainFrame mainFrame;
     private Mock mockUserDao;
     private ArrayList<User> users;
     private User expectedUser;
     private User user;
+    private static final String firstName = "Diego";
+    private static final String lastName = "Salvatore";
 
 
+    @Override
     protected void setUp() throws Exception {
         super.setUp();
         try {
@@ -42,8 +42,8 @@ public class MainFrameTest extends JFCTestCase {
             DaoFactory.init(properties);
             mockUserDao = ((MockDaoFactory) DaoFactory.getInstance()).getMockUserDao();
             setHelper(new JFCTestHelper());
-            String firstName = "Cat";
-            String lastName = "Smelly";
+            String firstName = "Rumbda";
+            String lastName = "Dumba";
             Date now = new Date();
             expectedUser = new User(20L, firstName, lastName, now);
             user = new User(20L, firstName, lastName, now);
@@ -98,12 +98,10 @@ public class MainFrameTest extends JFCTestCase {
 
     public void testAddUser() {
         try {
-            String firstName = "Dog";
-            String lastName = "Dirty";
             Date now = new Date();
-
+            Long id = 1L;
             User user = new User(firstName, lastName, now);
-            User expectedUser = new User(1L, firstName, lastName, now);
+            User expectedUser = new User(id, firstName, lastName, now);
             mockUserDao.expectAndReturn("create", user, expectedUser);
 
             users.add(expectedUser);
@@ -201,13 +199,11 @@ public class MainFrameTest extends JFCTestCase {
         }
     }
 
-    public void testEditUser() {
+
+    public void testEditUser()  {
         try {
-            String firstName = "Diego";
-            String lastName = "Spinosa";
-            Long id = 12L;
-            Date dateOfBirth = new Date(1985,NOVEMBER,19);
-            User expectedUser = new User(id, firstName, lastName, dateOfBirth);
+            Date dateOfBirth = new Date();
+            User expectedUser = new User(20L, firstName, lastName, dateOfBirth);
             mockUserDao.expectAndReturn("update", user, expectedUser);
             users.remove(user);
             users.add(expectedUser);

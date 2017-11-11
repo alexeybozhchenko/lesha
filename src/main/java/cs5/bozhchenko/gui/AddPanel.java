@@ -1,4 +1,4 @@
-package c5.bozhchenko.gui;
+package cs5.bozhchenko.gui;
 
 import cs5.bozhchenko.User;
 import cs5.bozhchenko.db.DatabaseException;
