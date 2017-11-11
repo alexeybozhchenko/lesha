@@ -1,8 +1,9 @@
-package cs.bozhchenko.db;
+package cs5.bozhchenko.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 /**
  * Created by motorcrue on 29.10.2017.
@@ -19,6 +20,13 @@ public class ConnectionFactoryImpl implements ConnectionFactory{
         this.password=password;
         this.url=url;
         this.user=user;
+    }
+
+    public ConnectionFactoryImpl(Properties properties) {
+         user = properties.getProperty("connection.user");
+         password = properties.getProperty("connection.password");
+         url = properties.getProperty("connection.url");
+         driver = properties.getProperty("connection.driver");
     }
 
 

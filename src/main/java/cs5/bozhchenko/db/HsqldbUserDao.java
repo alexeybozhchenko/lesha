@@ -1,5 +1,6 @@
-package cs.bozhchenko.db;
+package cs5.bozhchenko.db;
 
+import cs5.bozhchenko.db.*;
 import cs5.bozhchenko.User;
 
 import java.sql.*;
@@ -9,11 +10,11 @@ import java.util.LinkedList;
 /**
  * Created by motorcrue on 29.10.2017.
  */
-class HsqldbUserDao implements UserDao{
+class HsqldbUserDao implements UserDao {
 
     private static final String INSERT_QUERY = "INSERT INTO USERS (firstname, lastname, dateofbirth) VALUES (?, ?, ?)";
     private static final String SELECT_ALL_QUERY = "SELECT id, firstname, lastname, dateofbirth FROM users";
-    private ConnectionFactory connectionFactory;
+    private cs5.bozhchenko.db.ConnectionFactory connectionFactory;
     private static final String FIND_QUERY = "SELECT id, firstname, lastname, dateofbirth FROM users WHERE id=?";
     private static final String UPDATE_QUERY = "UPDATE users SET firstname=?, lastname=?, dateofbirth=? WHERE id=?";
     private static final String DELETE_QUERY = "DELETE FROM users WHERE id=?";
@@ -22,20 +23,20 @@ class HsqldbUserDao implements UserDao{
         super();
     }
 
-    public HsqldbUserDao(ConnectionFactory connectionFactory){
+    public HsqldbUserDao(cs5.bozhchenko.db.ConnectionFactory connectionFactory){
         this.connectionFactory = connectionFactory;
     }
 
-    public ConnectionFactory getConnectionFactory() {
+    public cs5.bozhchenko.db.ConnectionFactory getConnectionFactory() {
         return connectionFactory;
     }
 
-    public void setConnectionFactory(ConnectionFactory connectionFactory) {
+    public void setConnectionFactory(cs5.bozhchenko.db.ConnectionFactory connectionFactory) {
         this.connectionFactory = connectionFactory;
     }
 
     @Override
-    public User create(User user) throws DatabaseException {
+    public User create(User user) throws cs5.bozhchenko.db.DatabaseException {
         try {
             Connection connection = connectionFactory.createConnection();
             PreparedStatement statement = connection.prepareStatement(INSERT_QUERY);
@@ -44,7 +45,7 @@ class HsqldbUserDao implements UserDao{
             statement.setDate(3, new Date(user.getDateOfBirth().getTime()));
             int n = statement.executeUpdate();
             if(n!=1){
-                throw new DatabaseException("Number of rows inserted: " + n);
+                throw new cs5.bozhchenko.db.DatabaseException("Number of rows inserted: " + n);
             }
             CallableStatement callableStatement = connection.prepareCall("call IDENTITY()");
             ResultSet keys = callableStatement.executeQuery();
@@ -57,16 +58,16 @@ class HsqldbUserDao implements UserDao{
             connection.close();
             return user;
         }
-        catch (DatabaseException e) {
+        catch (cs5.bozhchenko.db.DatabaseException e) {
             throw e;
         }
         catch (SQLException e) {
-            throw new DatabaseException(e);
+            throw new cs5.bozhchenko.db.DatabaseException(e);
         }
     }
 
     @Override
-    public User update(User user) throws DatabaseException {
+    public void update(User user) throws DatabaseException {
         try {
             Connection connection = connectionFactory.createConnection();
             PreparedStatement statement = connection
@@ -81,16 +82,16 @@ class HsqldbUserDao implements UserDao{
             }
             statement.close();
             connection.close();
-            return user;
         } catch (DatabaseException e) {
             throw e;
         } catch (SQLException e) {
             throw new DatabaseException(e);
         }
+
     }
 
     @Override
-    public void delete(User user) throws DatabaseException {
+    public void delete(User user) throws cs5.bozhchenko.db.DatabaseException {
         Connection connection=connectionFactory.createConnection();
         try {
             PreparedStatement statement= connection.prepareStatement(DELETE_QUERY);
@@ -99,12 +100,12 @@ class HsqldbUserDao implements UserDao{
             statement.close();
             connection.close();
         }catch(SQLException e){
-            throw new DatabaseException(e);
+            throw new cs5.bozhchenko.db.DatabaseException(e);
         }
     }
 
     @Override
-    public User find(Long id) throws DatabaseException {
+    public User find(Long id) throws cs5.bozhchenko.db.DatabaseException {
         User result = null;
         try {
             Connection connection = connectionFactory.createConnection();
@@ -112,7 +113,7 @@ class HsqldbUserDao implements UserDao{
             statement.setLong(1, id);
             ResultSet resultSet = statement.executeQuery();
             if (!resultSet.next()) {
-                throw new DatabaseException("Could not find the user with id="
+                throw new cs5.bozhchenko.db.DatabaseException("Could not find the user with id="
                         + id);
             }
             result = new User();
@@ -123,16 +124,16 @@ class HsqldbUserDao implements UserDao{
             resultSet.close();
             statement.close();
             connection.close();
-        } catch (DatabaseException e) {
+        } catch (cs5.bozhchenko.db.DatabaseException e) {
             throw e;
         } catch (SQLException e) {
-            throw new DatabaseException(e);
+            throw new cs5.bozhchenko.db.DatabaseException(e);
         }
         return result;
     }
 
     @Override
-    public Collection findAll() throws DatabaseException {
+    public Collection findAll() throws cs5.bozhchenko.db.DatabaseException {
         Collection result = new LinkedList();
         try {
             Connection connection = connectionFactory.createConnection();
@@ -146,11 +147,11 @@ class HsqldbUserDao implements UserDao{
                 user.setDateOfBirth(resultSet.getDate(4));
                 result.add(user);
             }
-        } catch (DatabaseException e) {
+        } catch (cs5.bozhchenko.db.DatabaseException e) {
             throw e;
         }
         catch (SQLException e) {
-            throw new DatabaseException(e);
+            throw new cs5.bozhchenko.db.DatabaseException(e);
         }
         return result;
     }

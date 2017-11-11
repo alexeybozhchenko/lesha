@@ -1,4 +1,4 @@
-package cs.bozhchenko.db;
+package cs5.bozhchenko.db;
 
 import junit.framework.TestCase;
 

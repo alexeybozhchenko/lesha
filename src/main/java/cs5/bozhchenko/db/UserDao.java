@@ -1,5 +1,6 @@
-package cs.bozhchenko.db;
+package cs5.bozhchenko.db;
 
+import cs5.bozhchenko.db.*;
 import cs5.bozhchenko.User;
 
 import java.util.Collection;
@@ -9,9 +10,9 @@ import java.util.Collection;
  */
 public interface UserDao {
     User create(User user) throws DatabaseException;
-    User update(User user) throws DatabaseException;
+    void update(User user) throws DatabaseException;
     void delete(User user) throws DatabaseException;
     User find(Long id) throws DatabaseException;
     Collection findAll() throws DatabaseException;
-    void setConnectionFactory(ConnectionFactory connectionFactory);
+    void setConnectionFactory(cs5.bozhchenko.db.ConnectionFactory connectionFactory);
 }

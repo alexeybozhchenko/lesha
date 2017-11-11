@@ -1,5 +1,6 @@
-package cs.bozhchenko.db;
+package cs5.bozhchenko.db;
 
+import cs5.bozhchenko.db.*;
 import cs5.bozhchenko.User;
 import org.dbunit.DatabaseTestCase;
 import org.dbunit.database.DatabaseConnection;
@@ -14,15 +15,15 @@ import java.util.Date;
  * Created by motorcrue on 29.10.2017.
  */
 public class HsqldbUserDaoTest extends DatabaseTestCase {
-    private HsqldbUserDao dao;
+    private cs5.bozhchenko.db.HsqldbUserDao dao;
     private ConnectionFactory connectionFactory;
 
 
 
     @Override
     protected IDatabaseConnection getConnection() throws Exception {
-        connectionFactory = new ConnectionFactoryImpl("org.hsqldb.jdbcDriver",
-                "jdbc:hsqldb:file:db/lesha-master",
+        connectionFactory = new cs5.bozhchenko.db.ConnectionFactoryImpl("org.hsqldb.jdbcDriver",
+                "jdbc:hsqldb:file:db/lesha",
                 "sa",
                 "");
         return new DatabaseConnection(connectionFactory.createConnection());
@@ -37,7 +38,7 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        dao = new HsqldbUserDao(connectionFactory);
+        dao = new cs5.bozhchenko.db.HsqldbUserDao(connectionFactory);
     }
 
     public void testCreate() throws Exception {
@@ -50,7 +51,7 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
             user = dao.create(user);
             assertNotNull(user);
             assertNotNull(user.getId());
-        } catch (DatabaseException e) {
+        } catch (cs5.bozhchenko.db.DatabaseException e) {
             e.printStackTrace();
             fail(e.toString());
         }
@@ -65,7 +66,7 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
             dao.update(temporaryUser);
             User updatedUser = dao.find(1000L);
             assertEquals(temporaryUser.getFirstName(), updatedUser.getFirstName());
-        } catch (DatabaseException e) {
+        } catch (cs5.bozhchenko.db.DatabaseException e) {
             e.printStackTrace();
             fail(e.toString());
         }
@@ -94,7 +95,7 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
             java.util.Collection collection =  dao.findAll();
             assertNotNull("Collection is null",collection);
             assertEquals("Collection size.",2,collection.size());
-        } catch (DatabaseException e) {
+        } catch (cs5.bozhchenko.db.DatabaseException e) {
             e.printStackTrace();
             fail(e.toString());
         }
@@ -107,7 +108,7 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
             assertNotNull(userToCheck);
             dao.delete(userToCheck);
             assertEquals(1, dao.findAll().size());
-        } catch (DatabaseException e) {
+        } catch (cs5.bozhchenko.db.DatabaseException e) {
             fail(e.getMessage());
         }
     }

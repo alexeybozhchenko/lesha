@@ -1,5 +1,3 @@
-package cs5.bozhchenko;
-
 import junit.framework.TestCase;
 
 import java.util.Calendar;
@@ -10,12 +8,12 @@ import java.util.Date;
  */
 public class UserTest extends TestCase {
 
-    private User user;
+    private cs5.bozhchenko.User user;
     private Date dateOfBirth;
 
     public void setUp() throws Exception {
         super.setUp();
-        user = new User();
+        user = new cs5.bozhchenko.User();
         Calendar calendar = Calendar.getInstance();
         calendar.set(1984, Calendar.MAY, 26);
         dateOfBirth = calendar.getTime();
