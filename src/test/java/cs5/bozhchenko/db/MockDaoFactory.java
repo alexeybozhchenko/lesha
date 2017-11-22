@@ -4,20 +4,19 @@ import com.mockobjects.dynamic.Mock;
 import cs5.bozhchenko.db.DaoFactory;
 import cs5.bozhchenko.db.UserDao;
 
-public abstract class MockDaoFactory extends DaoFactory {
+public class MockDaoFactory extends DaoFactory {
     private Mock mockUserDao;
 
     public MockDaoFactory() {
-        super();
+       super();
         mockUserDao = new Mock(UserDao.class);
-
-
     }
 
     public Mock getMockUserDao() {
         return mockUserDao;
     }
 
+    @Override
     public UserDao getUserDao() {
         return  (UserDao) mockUserDao.proxy();
     }

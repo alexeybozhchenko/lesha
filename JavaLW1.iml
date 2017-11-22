@@ -46,5 +46,7 @@
     <orderEntry type="library" name="jsp-api" level="project" />
     <orderEntry type="library" name="nekohtml" level="project" />
     <orderEntry type="library" name="mockrunner-servlet" level="project" />
+    <orderEntry type="library" name="standard-1.1.1" level="project" />
+    <orderEntry type="library" name="jstl-1.1.1" level="project" />
   </component>
 </module>

@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MockUserDao implements UserDao {
-    private long id = 0;
+    private Long id = 0L;
     private Map<Long,User> users = new HashMap<>();
     @Override
     public User create(User user) throws DatabaseException {
