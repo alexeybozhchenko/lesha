@@ -5,8 +5,6 @@ import java.util.Date;
  * Created by motorcrue on 26.09.2017.
  */
 
-
-
 public class User {
 
     private Long id;
@@ -35,6 +33,7 @@ public class User {
         this.lastName = lastName;
         this.dateOfBirth = now;
     }
+
 
     public void setId(Long id) {
         this.id = id;
@@ -71,17 +70,15 @@ public class User {
     }
 
     public String getFullName() {
-        return getLastName() + ", " + getFirstName();
+        return this.getLastName() + ", " + this.getFirstName();
     }
 
     public int getAge() {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date());
-        int currentYear = calendar.get(Calendar.YEAR);
-        calendar.setTime(getDateOfBirth());
-        int year = calendar.get(Calendar.YEAR);
-        return currentYear - year;}
-
+        Calendar var1 = Calendar.getInstance();
+        var1.setTime(new Date());
+        int var2 = var1.get(1);
+        var1.setTime(this.getDateOfBirth());
+        int var3 = var1.get(1);
+        return var2 - var3;
+    }
 }
-
-

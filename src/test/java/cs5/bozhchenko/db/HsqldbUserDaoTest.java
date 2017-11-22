@@ -14,19 +14,19 @@ import java.util.*;
  * Created by motorcrue on 29.10.2017.
  */
 public class HsqldbUserDaoTest extends DatabaseTestCase {
-    private cs5.bozhchenko.db.HsqldbUserDao dao;
+    private HsqldbUserDao dao;
     private ConnectionFactory connectionFactory;
     private static final long USERS_ID = 1000L;
-    private static final int DAY_OF_BIRTH = 4;
-    private static final int MONTH_OF_BIRTH = 11;
-    private static final int YEAR_OF_BIRTH = 1997;
+    private static final int DAY_OF_BIRTH = 23;
+    private static final int MONTH_OF_BIRTH = 01;
+    private static final int YEAR_OF_BIRTH = 1998;
     private static final String LAST_NAME = "Diego";
     private static final String FIRST_NAME = "Spinosa";
 
 
     @Override
     protected IDatabaseConnection getConnection() throws Exception {
-        connectionFactory = new cs5.bozhchenko.db.ConnectionFactoryImpl("org.hsqldb.jdbcDriver",
+        connectionFactory = new ConnectionFactoryImpl("org.hsqldb.jdbcDriver",
                 "jdbc:hsqldb:file:db/JavaLW1",
                 "sa",
                 "");
@@ -42,23 +42,28 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        dao = new cs5.bozhchenko.db.HsqldbUserDao(connectionFactory);
+        dao = new HsqldbUserDao(connectionFactory);
     }
 
     public void testCreate() throws Exception {
-        try {
+
             User user = new User();
-            user.setFirstName("John");
-            user.setLastName("Doe");
+            user.setFirstName(FIRST_NAME);
+            user.setLastName(LAST_NAME);
             user.setDateOfBirth(new Date());
             assertNull(user.getId());
-            user = dao.create(user);
-            assertNotNull(user);
-            assertNotNull(user.getId());
-        } catch (cs5.bozhchenko.db.DatabaseException e) {
-            e.printStackTrace();
+             User theUser;
+        try {
+            theUser = dao.create(user);
+            assertNotNull(theUser);
+            assertNotNull(theUser.getId());
+            assertEquals(user.getFullName(), theUser.getFullName());
+            assertEquals(user.getAge(), theUser.getAge());
+
+        } catch (DatabaseException e) {
             fail(e.toString());
         }
+
 
     }
 
@@ -66,7 +71,7 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
         try {
             User temporaryUser = dao.find(1000L);
             assertNotNull(temporaryUser);
-            temporaryUser.setFirstName("John");
+            temporaryUser.setFirstName(FIRST_NAME);
             dao.update(temporaryUser);
             User updatedUser = dao.find(1000L);
             assertEquals(temporaryUser.getFirstName(), updatedUser.getFirstName());
@@ -79,8 +84,8 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
     public void testFind() throws Exception {
         User bush = new User();
         bush.setId(1001L);
-        bush.setFirstName("George");
-        bush.setLastName("Bush");
+        bush.setFirstName(FIRST_NAME);
+        bush.setLastName(LAST_NAME);
         Calendar calendar = Calendar.getInstance();
         calendar.set(1949, Calendar.AUGUST, 17, 0, 0, 0);
         calendar.set(Calendar.MILLISECOND, 0);

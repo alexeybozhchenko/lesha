@@ -31,10 +31,10 @@ public class ConnectionFactoryImpl implements ConnectionFactory{
 
 
     public Connection createConnection() throws DatabaseException{
-        String url = "jdbc:hsqldb:file:db/JavaLW1";
-        String user = "sa";
-        String password = "";
-        String driver = "org.hsqldb.jdbcDriver";
+          url = "jdbc:hsqldb:file:db/JavaLW1";
+          user = "sa";
+          password = "";
+          driver = "org.hsqldb.jdbcDriver";
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException e) {

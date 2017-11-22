@@ -93,9 +93,6 @@ class HsqldbUserDao implements UserDao {
     }
 
     @Override
-
-
-
     public void delete(User user) throws DatabaseException {
         try {
             Connection connection = connectionFactory.createConnection();

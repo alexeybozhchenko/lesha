@@ -17,42 +17,37 @@ import javax.swing.*;
 import java.awt.*;
 import java.text.DateFormat;
 import java.util.*;
+import java.util.List;
 
 public class MainFrameTest extends JFCTestCase {
 
     private MainFrame mainFrame;
     private Mock mockUserDao;
-    private ArrayList<User> users;
-    private User expectedUser;
+    List<User> users;
+    private static User expectedUser;
     private User user;
-    private static final String firstName = "Diego";
-    private static final String lastName = "Salvatore";
+    private static final String FIRST_NAME = "Diego";
+    private static final String LAST_NAME = "Salvatore";
 
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        try {
 
+        try {
             Properties properties = new Properties();
             properties.setProperty("dao.factory", MockDaoFactory.class.getName());
             DaoFactory.init(properties);
             mockUserDao = ((MockDaoFactory) DaoFactory.getInstance()).getMockUserDao();
-            setHelper(new JFCTestHelper());
-            String firstName = "Rumbda";
-            String lastName = "Dumba";
-            Date now = new Date();
-            expectedUser = new User(new Long(1), "Leha", "Osyotr",new Date());
-            user = new User(20L, firstName, lastName, now);
-            users = new ArrayList<>();
-            users.add(expectedUser);
-
+            expectedUser = new User(30L, FIRST_NAME, LAST_NAME, new Date());
+            users = Collections.singletonList(expectedUser);
             mockUserDao.expectAndReturn("findAll", users);
+            setHelper(new JFCTestHelper());
             mainFrame = new MainFrame();
-            mainFrame.setVisible(true);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+        mainFrame.setVisible(true);
     }
 
 
@@ -94,8 +89,8 @@ public class MainFrameTest extends JFCTestCase {
     public void testAddUser() {
         try {
             Date now = new Date();
-            User user = new User(firstName, lastName, now);
-            User expectedUser = new User(20L, firstName, lastName, now);
+            User user = new User(FIRST_NAME, LAST_NAME, now);
+            User expectedUser = new User(20L, FIRST_NAME, LAST_NAME, now);
             mockUserDao.expectAndReturn("create", user, expectedUser);
 
             users.add(expectedUser);
@@ -112,8 +107,8 @@ public class MainFrameTest extends JFCTestCase {
             JButton okButton = (JButton) find(JButton.class, "okButton");
             find(JButton.class, "cancelButton");
 
-            getHelper().sendString(new StringEventData(this, firstNameField, firstName));
-            getHelper().sendString(new StringEventData(this, lastNameField, lastName));
+            getHelper().sendString(new StringEventData(this, firstNameField, FIRST_NAME));
+            getHelper().sendString(new StringEventData(this, lastNameField, LAST_NAME));
             DateFormat formatter = DateFormat.getInstance();
             String date = formatter.format(now);
             getHelper().sendString(new StringEventData(this, dateOfBirthField, date));
@@ -197,7 +192,7 @@ public class MainFrameTest extends JFCTestCase {
     public void testEditUser()  {
         try {
             Date dateOfBirth = new Date();
-            User expectedUser = new User(20L, firstName, lastName, dateOfBirth);
+            User expectedUser = new User(20L, FIRST_NAME, LAST_NAME, dateOfBirth);
             mockUserDao.expectAndReturn("update", user, expectedUser);
             users.remove(user);
             users.add(expectedUser);
@@ -221,8 +216,8 @@ public class MainFrameTest extends JFCTestCase {
             firstNameField.setText("");
             lastNameField.setText("");
             dateOfBirthField.setText("");
-            getHelper().sendString(new StringEventData(this, firstNameField, firstName));
-            getHelper().sendString(new StringEventData(this, lastNameField, lastName));
+            getHelper().sendString(new StringEventData(this, firstNameField, FIRST_NAME));
+            getHelper().sendString(new StringEventData(this, lastNameField, LAST_NAME));
             DateFormat formatter = DateFormat.getDateInstance();
             String date = formatter.format(dateOfBirth);
             getHelper().sendString(new StringEventData(this, dateOfBirthField, date));
