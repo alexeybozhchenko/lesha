@@ -14,15 +14,14 @@ public class User {
     private String lastName;
     private Date dateOfBirth;
 
-    public User() {
-
-    }
     public User(User user) {
         id = user.getId();
         firstName = user.getFirstName();
         lastName = user.getLastName();
         dateOfBirth = user.getDateOfBirth();
     }
+
+    public User(){}
 
     public User(Long id, String firstName, String lastName, Date now) {
         this.id = id;

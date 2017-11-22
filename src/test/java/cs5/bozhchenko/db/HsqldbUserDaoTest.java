@@ -8,8 +8,7 @@ import org.dbunit.database.IDatabaseConnection;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.XmlDataSet;
 
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 
 /**
  * Created by motorcrue on 29.10.2017.
@@ -17,13 +16,18 @@ import java.util.Date;
 public class HsqldbUserDaoTest extends DatabaseTestCase {
     private cs5.bozhchenko.db.HsqldbUserDao dao;
     private ConnectionFactory connectionFactory;
-
+    private static final long USERS_ID = 1000L;
+    private static final int DAY_OF_BIRTH = 4;
+    private static final int MONTH_OF_BIRTH = 11;
+    private static final int YEAR_OF_BIRTH = 1997;
+    private static final String LAST_NAME = "Diego";
+    private static final String FIRST_NAME = "Spinosa";
 
 
     @Override
     protected IDatabaseConnection getConnection() throws Exception {
         connectionFactory = new cs5.bozhchenko.db.ConnectionFactoryImpl("org.hsqldb.jdbcDriver",
-                "jdbc:hsqldb:file:db/lesha",
+                "jdbc:hsqldb:file:db/JavaLW1",
                 "sa",
                 "");
         return new DatabaseConnection(connectionFactory.createConnection());
@@ -91,25 +95,32 @@ public class HsqldbUserDaoTest extends DatabaseTestCase {
     }
 
     public void testFindAll(){
+        Collection<User> collection = new LinkedList<>();
         try {
-            java.util.Collection collection =  dao.findAll();
-            assertNotNull("Collection is null",collection);
-            assertEquals("Collection size.",2,collection.size());
-        } catch (cs5.bozhchenko.db.DatabaseException e) {
+            collection = dao.findAll();
+        } catch (DatabaseException e) {
             e.printStackTrace();
-            fail(e.toString());
         }
+        assertNotNull("Collection is null", collection);
+        assertEquals("Collection size.", 2, collection.size());
     }
 
     public void testDelete() throws Exception {
+        Collection<User> collection = new LinkedList<>();
+        User user = new User();
+        user.setId(USERS_ID);
+        user.setFirstName(FIRST_NAME);
+        user.setLastName(LAST_NAME);
+        Calendar dateOfBirthNew = new GregorianCalendar(YEAR_OF_BIRTH, MONTH_OF_BIRTH, DAY_OF_BIRTH);
+        user.setDateOfBirth(dateOfBirthNew.getTime());
         try {
+            dao.delete(user);
+            collection = dao.findAll();
+            assertNotNull("Collection is null", collection);
+            assertEquals("Collection size.", 1, collection.size());
 
-            User userToCheck = dao.find(1001L);
-            assertNotNull(userToCheck);
-            dao.delete(userToCheck);
-            assertEquals(1, dao.findAll().size());
-        } catch (cs5.bozhchenko.db.DatabaseException e) {
-            fail(e.getMessage());
+        } catch (DatabaseException e) {
+            e.printStackTrace();
         }
     }
 }

@@ -13,15 +13,12 @@ import junit.extensions.jfcunit.eventdata.JTableMouseEventData;
 import junit.extensions.jfcunit.eventdata.MouseEventData;
 import junit.extensions.jfcunit.eventdata.StringEventData;
 import junit.extensions.jfcunit.finder.NamedComponentFinder;
-
-
 import javax.swing.*;
 import java.awt.*;
 import java.text.DateFormat;
 import java.util.*;
 
 public class MainFrameTest extends JFCTestCase {
-
 
     private MainFrame mainFrame;
     private Mock mockUserDao;
@@ -30,7 +27,6 @@ public class MainFrameTest extends JFCTestCase {
     private User user;
     private static final String firstName = "Diego";
     private static final String lastName = "Salvatore";
-
 
     @Override
     protected void setUp() throws Exception {
@@ -45,7 +41,7 @@ public class MainFrameTest extends JFCTestCase {
             String firstName = "Rumbda";
             String lastName = "Dumba";
             Date now = new Date();
-            expectedUser = new User(20L, firstName, lastName, now);
+            expectedUser = new User(new Long(1), "Leha", "Osyotr",new Date());
             user = new User(20L, firstName, lastName, now);
             users = new ArrayList<>();
             users.add(expectedUser);
@@ -92,16 +88,14 @@ public class MainFrameTest extends JFCTestCase {
         find(JButton.class, "editButton");
         find(JButton.class, "deleteButton");
         find(JButton.class, "detailsButton");
-
     }
 
 
     public void testAddUser() {
         try {
             Date now = new Date();
-            Long id = 1L;
             User user = new User(firstName, lastName, now);
-            User expectedUser = new User(id, firstName, lastName, now);
+            User expectedUser = new User(20L, firstName, lastName, now);
             mockUserDao.expectAndReturn("create", user, expectedUser);
 
             users.add(expectedUser);
@@ -244,4 +238,5 @@ public class MainFrameTest extends JFCTestCase {
             e.printStackTrace();
         }
     }
+
 }

@@ -31,7 +31,7 @@ public class ConnectionFactoryImpl implements ConnectionFactory{
 
 
     public Connection createConnection() throws DatabaseException{
-        String url = "jdbc:hsqldb:file:db/lesha-master";
+        String url = "jdbc:hsqldb:file:db/JavaLW1";
         String user = "sa";
         String password = "";
         String driver = "org.hsqldb.jdbcDriver";
