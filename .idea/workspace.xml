@@ -921,7 +921,7 @@
       <workItem from="1511297063864" duration="23554000" />
       <workItem from="1511351333982" duration="9588000" />
       <workItem from="1511395109172" duration="634000" />
-      <workItem from="1513186666343" duration="5247000" />
+      <workItem from="1513186666343" duration="5324000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1507703858782</created>
@@ -966,7 +966,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123084000" />
+    <option name="totallyTimeSpent" value="123161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
