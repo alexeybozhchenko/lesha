@@ -144,22 +144,6 @@ class HsqldbUserDao implements UserDao {
 
     @Override
     public User find(Long id) throws DatabaseException {
-       /* User user = new User();
-        try (Connection connection = connectionFactory.createConnection();
-             PreparedStatement statement = connection.prepareStatement(SELECT_USER_BY_ID)) {
-            statement.setLong(1, id);
-            try (ResultSet rs = statement.executeQuery()) {
-                while (rs.next()) {
-                    user.setId(rs.getLong(1));
-                    user.setFirstName(rs.getString(2));
-                    user.setLastName(rs.getString(3));
-                    user.setDateOfBirth(rs.getDate(4));
-                }
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return user;*/
         User result = null;
         try {
             Connection connection = connectionFactory.createConnection();

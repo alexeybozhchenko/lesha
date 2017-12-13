@@ -7,6 +7,7 @@ import cs5.bozhchenko.db.UserDao;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
 
 public class MockUserDao implements UserDao {
