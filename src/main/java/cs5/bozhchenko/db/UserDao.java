@@ -15,4 +15,5 @@ public interface UserDao {
     User find(Long id) throws DatabaseException;
     Collection findAll() throws DatabaseException;
     void setConnectionFactory(cs5.bozhchenko.db.ConnectionFactory connectionFactory);
+    Collection<User> findByName(String firstName, String lastName) throws DatabaseException;
 }

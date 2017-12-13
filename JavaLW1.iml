@@ -8,9 +8,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="false" />
     </content>
+    <content url="jar://$MODULE_DIR$/commons-codec-1.3.jar!/" />
     <content url="jar://$MODULE_DIR$/lib/commons-logging.jar!/" />
     <content url="jar://$MODULE_DIR$/lib/dbunit-2.1.jar!/" />
     <content url="jar://$MODULE_DIR$/lib/hsqldb-1.8.0.1.jar!/" />
+    <content url="jar://$MODULE_DIR$/lib/http.jar!/" />
+    <content url="jar://$MODULE_DIR$/lib/iiop.jar!/" />
+    <content url="jar://$MODULE_DIR$/lib/jade.jar!/" />
+    <content url="jar://$MODULE_DIR$/lib/jadeTools.jar!/" />
     <content url="jar://$MODULE_DIR$/lib/jakarta-oro-2.0.8.jar!/" />
     <content url="jar://$MODULE_DIR$/lib/jdom.jar!/" />
     <content url="jar://$MODULE_DIR$/lib/jfcunit-2.08.jar!/" />
@@ -48,5 +53,35 @@
     <orderEntry type="library" name="mockrunner-servlet" level="project" />
     <orderEntry type="library" name="standard-1.1.1" level="project" />
     <orderEntry type="library" name="jstl-1.1.1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/commons-codec-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <ANNOTATIONS>
+          <root url="file://$MODULE_DIR$" />
+        </ANNOTATIONS>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/http.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/iiop.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jade.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/jadeTools.jar!/" />
+          <root url="file://$MODULE_DIR$" />
+          <root url="file://$MODULE_DIR$" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/test/java" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>
