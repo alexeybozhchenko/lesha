@@ -70,7 +70,7 @@ public class SearchGui extends JFrame {
     }
 
     public void addUsers(Collection<User> users) {
-        System.out.println("addUsers :" + users);
+        System.out.println("addUsers :" +   users);
         UserTableModel model = (UserTableModel) getTable().getModel();
         model.addUsers(users);
         System.out.println(users);

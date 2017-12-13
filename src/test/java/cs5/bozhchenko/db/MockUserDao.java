@@ -50,7 +50,7 @@ public class MockUserDao implements UserDao {
 
     }
 
-    public Collection findByName(String firstName, String lastName) throws DatabaseException {
+    public Collection find(String firstName, String lastName) throws DatabaseException {
         Collection<User> foundUsers = new LinkedList<>();
         for (Map.Entry<Long, User> user : users.entrySet()) {
             if (user.getValue().getFirstName().equals(firstName) && user.getValue().getLastName().equals(lastName)) {
